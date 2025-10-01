@@ -25,13 +25,23 @@ public class RunMotor extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    motorSubsystem.runMotor();
+    /*
+     * TO DO:
+     * Using the motorSubsystem object from line 14, call the .runMotor() method defined in MotorSubsystem.java.
+     * This is done because while the command is being executed, it should be making the motor spin
+     */
+    
   }
 
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    motorSubsystem.stop();
+    /*
+     * TO DO:
+     * Using the motorSunsystem object from line 14, call the mothod .stop() defined in MotorSubsystem.java
+     * This is done in the end() method because the command can stop at any time
+     */
+
   }
 
   // Returns true when the command should end.

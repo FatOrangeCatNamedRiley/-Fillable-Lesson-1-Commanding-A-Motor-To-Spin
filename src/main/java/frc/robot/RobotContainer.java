@@ -40,8 +40,19 @@ public class RobotContainer {
    */
   private void configureBindings() {
     // Schedule `ExampleCommand` when `exampleCondition` changes to `true`
-    
-    driverController.a().whileTrue(new RunMotor());
+
+    /*
+    TO DO:
+     * The driverController object has multible methods
+     * The one we are using in this lession will be one of the button methods:
+     *        .a() - when A button is pressed;
+     *        .b() - when B button is pressed;
+     *        .x() - when x button is pressed;
+     *        .y() - when y button is pressed;
+     * 
+     * The other related method we are using in this is .whileTrue(Command com)
+     * In the imput for .whileTrue() you should create a RunMotor()
+     */
 
   }
 

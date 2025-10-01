@@ -13,20 +13,38 @@ import frc.robot.Constants;
 public class MotorSubsystem extends SubsystemBase {
   /** Creates a new MotorSubsystem. */
 
-  private SparkMax motor1 = new SparkMax(Constants.MotorID, MotorType.kBrushless);
+  /*
+   * TO DO:
+   * Create a new motor using the SparkMax() constructor
+   * The SparkMax object constructor takes 2 varriables as input
+   * 
+   * SparkMax(Constants.MotorID, MotorType.kBrushless)
+   *                              ^Don't replace^
+   */
+  private SparkMax motor1 = null;
 
   public MotorSubsystem() {}
 
+  /*
+   * TO DO:
+   * The .set(double n) method take a double input from -1 to 1
+   * -1 being -100% speed, and 1 being 100% speed
+   * Use that .set() method to set the speed of the motor to 50%
+   */
   public void runMotor(){
-    motor1.set(.5);
+
   }
 
+  /*
+   * TO DO:
+   * use the .set() method to stop the motor
+   */
   public void stop(){
-    motor1.set(0);
+
   }
 
   @Override
   public void periodic() {
-    // This method will be called once per scheduler run
+    // This method will be called once per scheduler run (not needed for this lesson)
   }
 }
